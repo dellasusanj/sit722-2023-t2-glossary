@@ -40,7 +40,27 @@ const itemList = [{ 'id':1, 'term': 'DevOps', 'description': 'DevOps is  concept
 { 'id':19, 'term': 'MTTR (Mean Time to recovery)', 'description': 'It is one of the Devops metrics, which calculates the average time needed for a device or service to recover from failure.', 
 'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 05, 2023).'},
 { 'id':20, 'term': 'Production', 'description': 'It is the live environment where an application or feature is available and accessible to end users.', 
-'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 05, 2023).'}
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 05, 2023).'},
+{ 'id':21, 'term': 'Infrastructure as Code (IaC)', 'description': 'IaC is a practice of managing and provisioning infrastructure using code and automation tools, enabling consistent and repeatable deployments.', 
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
+{ 'id':22, 'term': 'Containerization', 'description': 'Containerization is a technology that packages an application and its dependencies together in a lightweight container, ensuring consistency across different environments.', 
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
+{ 'id':23, 'term': 'Orchestration', 'description': 'Orchestration involves automating and coordinating various tasks, processes, and services to work together in a streamlined and efficient manner.', 
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
+{ 'id':24, 'term': 'DevSecOps', 'description': 'DevSecOps integrates security practices into the DevOps workflow, ensuring security measures are implemented throughout the software development lifecycle.', 
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
+{ 'id':25, 'term': 'Scalability', 'description': 'Scalability refers to the ability of a system to handle increasing amounts of work, traffic, or users by adding resources without compromising performance. It is a key consideration in DevOps to ensure applications can accommodate growth.', 
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
+{ 'id':26, 'term': 'Kubernetes', 'description': 'Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides tools for managing containerized workloads and services at scale.', 
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
+{ 'id':27, 'term': 'Monitoring and Observability', 'description': 'Monitoring involves tracking system performance and health, while observability focuses on gaining insights into system behavior and troubleshooting. Both are essential for maintaining the reliability and availability of applications in a DevOps environment.', 
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
+{ 'id':28, 'term': 'SLA (Service Level Agreement)', 'description': 'An SLA is a formal agreement that outlines the expected level of service and performance between a service provider and its customers. It often includes metrics like uptime, response time, and resolution time, helping to set expectations and ensure accountability.', 
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
+{ 'id':29, 'term': 'Blue-Green Deployment', 'description': 'Blue-Green deployment is a release strategy where two identical environments (blue and green) are maintained. One environment hosts the current production version, while the other is used for testing and deployment of new releases.', 
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
+{ 'id':30, 'term': 'Pipeline as Code', 'description': 'Pipeline as Code refers to defining the entire continuous integration and continuous delivery (CI/CD) pipeline in code, typically using domain-specific languages or configuration files. This approach ensures consistency, versioning, and easy replication of the pipeline across different environments.', 
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'}
 ];
 
 /* GET home page. */
