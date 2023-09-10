@@ -60,7 +60,27 @@ const itemList = [{ 'id':1, 'term': 'DevOps', 'description': 'DevOps is  concept
 { 'id':29, 'term': 'Blue-Green Deployment', 'description': 'Blue-Green deployment is a release strategy where two identical environments (blue and green) are maintained. One environment hosts the current production version, while the other is used for testing and deployment of new releases.', 
 'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
 { 'id':30, 'term': 'Pipeline as Code', 'description': 'Pipeline as Code refers to defining the entire continuous integration and continuous delivery (CI/CD) pipeline in code, typically using domain-specific languages or configuration files. This approach ensures consistency, versioning, and easy replication of the pipeline across different environments.', 
-'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'}
+'reference': '“DevOps Glossary of Terms and Definitions: From A to Z,” MSys Technologies. https://www.msystechnologies.com/resource/glossary/devops-glossary/ (accessed Aug. 17, 2023).'},
+{ 'id': 31, 'term': 'Terraform', 'description': 'Terraform is an open-source infrastructure as code (IaC) tool that allows you to define and provision infrastructure using a declarative configuration language.',
+'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"},
+{ 'id': 32, 'term': 'Terraform Provider', 'description': 'A Terraform Provider is a plugin that extends Terraform capabilities to interact with specific infrastructure or services, such as AWS, Azure, or Kubernetes.',
+'reference': "Terraform. https://www.terraform.io/docs/providers/index.html (accessed Sep. 07, 2023)"},
+{ 'id': 33, 'term': 'terraform init', 'description': 'terraform init initializes the working directory and downloads any required plugins.',
+'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"},
+{ 'id': 34, 'term': 'terraform plan', 'description': 'terraform plan is a Terraform CLI command that generates an execution plan.',
+'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"},
+{ 'id': 35, 'term': 'terraform apply', 'description': 'terraform apply  is a Terraform CLI command used to create or update infrastructure resources based on the configurations defined in Terraform files.',
+'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"},
+{ 'id': 36, 'term': 'terraform destroy', 'description': 'terraform destroy is a Terraform CLI command used to remove all resources created by a Terraform configuration.',
+'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"},
+{ 'id': 37, 'term': 'Terraform Variables', 'description': 'Terraform variables are placeholders in configuration files that allow you to parameterize your infrastructure code.',
+'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"},
+{ 'id': 38, 'term': 'Terraform Registry', 'description': 'The Terraform Registry is a central repository and platform provided by HashiCorp that hosts and manages Terraform modules, provider plugins, and other reusable infrastructure components.',
+'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"},
+{ 'id': 39, 'term': 'Terraform Cloud', 'description': 'Terraform Cloud provides a consistent environment for Terraform runs.',
+'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"},
+{ 'id': 40, 'term': 'Terraform HCL', 'description': 'HCL, which stands for HashiCorp Configuration Language, is the language used to write Terraform configuration files.',
+'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"}
 ];
 
 /* GET home page. */
