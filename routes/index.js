@@ -80,15 +80,44 @@ const itemList = [{ 'id':1, 'term': 'DevOps', 'description': 'DevOps is  concept
 { 'id': 39, 'term': 'Terraform Cloud', 'description': 'Terraform Cloud provides a consistent environment for Terraform runs.',
 'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"},
 { 'id': 40, 'term': 'Terraform HCL', 'description': 'HCL, which stands for HashiCorp Configuration Language, is the language used to write Terraform configuration files.',
-'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"}
+'reference': "HashiCorp. https://www.terraform.io/docs/index.html (accessed Sep. 07, 2023)"},
+{ 'id': 41, 'term': 'Pods', 'description': 'Basic units of deployment in Kubernetes, consisting of one or more containers that share resources and a network namespace.',
+'reference': "“Glossary,” Kubernetes. https://kubernetes.io/docs/reference/glossary/?fundamental=true (accessed Sep. 16, 2023)"},
+{ 'id': 42, 'term': 'Namespace', 'description': 'A way to divide cluster resources between multiple users or projects within a cluster, providing a level of isolation.',
+'reference': "“Glossary,” Kubernetes. https://kubernetes.io/docs/reference/glossary/?fundamental=true (accessed Sep. 16, 2023)"},
+{ 'id': 43, 'term': 'Cluster', 'description': 'A set of nodes (machines) that collectively run your applications using Kubernetes.',
+'reference': "“Glossary,” Kubernetes. https://kubernetes.io/docs/reference/glossary/?fundamental=true (accessed Sep. 16, 2023)"},
+{ 'id': 44, 'term': 'Nodes', 'description': 'Individual machines (virtual or physical) in a Kubernetes cluster where pods run.',
+'reference': "“Glossary,” Kubernetes. https://kubernetes.io/docs/reference/glossary/?fundamental=true (accessed Sep. 16, 2023)"},
+{ 'id': 45, 'term': 'Service', 'description': 'A Kubernetes resource that provides a consistent way to expose an application running in a set of pods to other parts of the cluster or external users.',
+'reference': "“Glossary,” Kubernetes. https://kubernetes.io/docs/reference/glossary/?fundamental=true (accessed Sep. 16, 2023)"},
+{ 'id': 46, 'term': 'Ingress', 'description': 'A Kubernetes resource that manages external access to services, typically acting as an HTTP reverse proxy.',
+'reference': "“Glossary,” Kubernetes. https://kubernetes.io/docs/reference/glossary/?fundamental=true (accessed Sep. 16, 2023)"},
+{ 'id': 47, 'term': 'Controller', 'description': 'A core component in Kubernetes that continuously observes the desired state and works to bring the current state closer to that desired state.',
+'reference': "“Glossary,” Kubernetes. https://kubernetes.io/docs/reference/glossary/?fundamental=true (accessed Sep. 16, 2023)"},
+{ 'id': 48, 'term': 'Container Orchestration', 'description': 'The automated arrangement, coordination, and management of software containers to ensure efficient deployment, scaling, and operation.',
+'reference': "“Glossary,” Kubernetes. https://kubernetes.io/docs/reference/glossary/?fundamental=true (accessed Sep. 16, 2023)"},
+{ 'id': 49, 'term': 'YAML', 'description': 'A human-readable data serialization standard often used for defining Kubernetes manifests, which describe the desired state of the cluster.',
+'reference': "“Glossary,” Kubernetes. https://kubernetes.io/docs/reference/glossary/?fundamental=true (accessed Sep. 16, 2023)"},
+{ 'id': 50, 'term': 'Load Balancing', 'description': 'The process of distributing network traffic evenly across a group of servers to ensure no single server becomes overwhelmed, often achieved through Kubernetes services.',
+'reference': "“Glossary,” Kubernetes. https://kubernetes.io/docs/reference/glossary/?fundamental=true (accessed Sep. 16, 2023)"}
 ];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', 
-  { title: 'SIT722: My DevOps Glossary', 
-  subtitle: 'Welcome to my website showing a collection of DevOps terms and their brief descriptions, along with the references to sources that I used to gather the information about the terms listed.', 
-  items: itemList });
+  // Sort itemList alphabetically based on the 'term' property
+  itemList.sort((a, b) => a.term.localeCompare(b.term));
+
+  // Update 'id' numbers sequentially
+  itemList.forEach((item, index) => {
+    item.id = index + 1;
+  });
+
+  res.render('index', {
+    title: 'SIT722: My DevOps Glossary',
+    subtitle: 'Welcome to my website showing a collection of DevOps terms and their brief descriptions, along with the references to sources that I used to gather the information about the terms listed.',
+    items: itemList
+  });
 });
 
 module.exports = router;
